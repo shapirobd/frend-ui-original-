@@ -1,0 +1,5 @@
+.CardBody {
+	padding: 15px;
+	display: flex;
+	opacity: 75%;
+}

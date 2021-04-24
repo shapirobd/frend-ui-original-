@@ -1,0 +1,17 @@
+.CardHeader {
+	padding: 15px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.CardHeader-title {
+	margin: 0;
+	padding: 1px;
+}
+
+.CardHeader-subtitle {
+	margin: 0;
+	padding: 1px;
+	opacity: 75%;
+}
