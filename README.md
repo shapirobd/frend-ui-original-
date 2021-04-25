@@ -23,7 +23,7 @@ import React from "react";
 import Button from "frend-ui/core/Button";
 
 const App = () => {
-	return <Grid></Grid>;
+	return <Button>Submit</Button>;
 };
 
 export default App;
