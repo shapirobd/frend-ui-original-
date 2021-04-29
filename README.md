@@ -8,10 +8,10 @@ Frend-UI is available as an npm package.
 
 ```bash
 // with npm
-npm install @material-ui/core
+npm install frend-ui
 
 // with yarn
-yarn add @material-ui/core
+yarn add frend-ui
 ```
 
 # Usage

@@ -20,14 +20,12 @@ import DialogScreen from "./components/Dialog/DialogScreen";
 // import CardHeader from "./components/Card/CardHeader";
 // import CardImage from "./components/Card/CardImage";
 // import CardActions from "./components/Card/CardActions";
-// import Avatar from "./components/Avatar";
+import Avatar from "./components/Avatar";
 import useToggleState from "./hooks/useToggleState";
 
 // const testArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function App() {
-	const [open, toggleOpen] = useToggleState(false);
-
 	return (
 		<div className="App">
 			{/* <Form>
@@ -62,10 +60,7 @@ function App() {
 					Submit
 				</Button>
 			</Form> */}
-			<Button onClick={() => toggleOpen()}>Show Dialog</Button>
-			<DialogScreen open={open} toggleOpen={toggleOpen}>
-				This is a dialog. It is awesome!
-			</DialogScreen>
+			<Avatar img="https://wallpaperaccess.com/full/2213424.jpg"></Avatar>
 		</div>
 	);
 }

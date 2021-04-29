@@ -9,3 +9,7 @@
 	color: #000000;
 	margin-right: 15px;
 }
+
+.thumbnail {
+	background-size: cover;
+}
