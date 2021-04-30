@@ -61,6 +61,57 @@ export default App;
 
 ```
 
+## Form
+
+```javascript
+import Form from "./components/Form/Form";
+import FormRow from "./components/Form/FormRow";
+import FormColumn from "./components/Form/FormColumn";
+import TextInput from "./components/Form/TextInput";
+import Button from "./components/Form/Button";
+import Checkbox from "./components/Form/Checkbox";
+import Radio from "./components/Form/Radio";
+
+function App() {
+	return (
+		<div className="App">
+			<Form>
+				<FormRow>
+					<TextInput name="email" label="Email" placeholder="Enter email" />
+					<TextInput
+						name="username"
+						label="Username"
+						placeholder="Enter username"
+					/>
+					<TextInput
+						type="password"
+						name="password"
+						label="Password"
+						placeholder="Ender password"
+					/>
+				</FormRow>
+				<FormRow>
+					<FormColumn>
+						<Checkbox />
+						<Checkbox />
+						<Checkbox />
+						<Checkbox />
+					</FormColumn>
+				</FormRow>
+				<Radio name="fruits" value="apple" />
+				<Radio name="fruits" value="orange" />
+				<Button bg="primary" color="light">
+					Click me!
+				</Button>
+				<Button bg="secondary" color="dark" type="submit">
+					Submit
+				</Button>
+			</Form>
+		</div>
+	);
+}
+```
+
 ## Grid
 
 ```javascript
@@ -94,3 +145,5 @@ function App() {
 ```javascript
 
 ```
+
+## Table
