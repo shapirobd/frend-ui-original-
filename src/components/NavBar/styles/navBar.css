@@ -1,0 +1,20 @@
+.NavBar {
+	min-height: 60px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.NavBar.bg-dark,
+.NavBar.bg-dark a {
+	background-color: #424242;
+	color: #fff;
+}
+
+.NavBar.bg-light {
+	background-color: #fff;
+}
+
+.NavBar.bg-dark a:hover {
+	transition-duration: 0.2s;
+	color: #ccc;
+}

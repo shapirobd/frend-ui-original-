@@ -1,5 +1,5 @@
 import "./App.css";
-import React, { useEffect } from "react";
+import React from "react";
 // import Accordion from "./components/Accordion";
 // import Form from "./components/Form/Form";
 // import FormRow from "./components/Form/FormRow";
@@ -14,75 +14,62 @@ import React, { useEffect } from "react";
 // import DialogScreen from "./components/Dialog/DialogScreen";
 // import ProgressBar from "./components/ProgressBar";
 // import Tab from "./components/Tab";
-import TableContainer from "./components/Table/TableContainer";
-import Table from "./components/Table/Table";
-import TableCell from "./components/Table/TableCell";
-import TableHead from "./components/Table/TableHead";
-import TableRow from "./components/Table/TableRow";
-import TableBody from "./components/Table/TableBody";
+// import TableContainer from "./components/Table/TableContainer";
+// import Table from "./components/Table/Table";
+// import TableCell from "./components/Table/TableCell";
+// import TableHead from "./components/Table/TableHead";
+// import TableRow from "./components/Table/TableRow";
+// import TableBody from "./components/Table/TableBody";
 // import Card from "./components/Card/Card";
 // import CardBody from "./components/Card/CardBody";
 // import CardHeader from "./components/Card/CardHeader";
 // import CardImage from "./components/Card/CardImage";
 // import CardActions from "./components/Card/CardActions";
-import Avatar from "./components/Avatar";
-import useToggleState from "./hooks/useToggleState";
+// import Avatar from "./components/Avatar";
+// import useToggleState from "./hooks/useToggleState";
+import NavBar from "./components/NavBar/NavBar";
+import NavSection from "./components/NavBar/NavSection";
+import NavItem from "./components/NavBar/NavItem";
 
 // const testArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function App() {
 	return (
 		<div className="App">
-			<TableContainer>
-				<Table bg="dark">
-					<TableHead>
-						<TableCell>Dessert (100g serving)</TableCell>
-						<TableCell align="right">Calories</TableCell>
-						<TableCell align="right">Fat (g)</TableCell>
-						<TableCell align="right">Carbs (g)</TableCell>
-						<TableCell align="right">Protein (g)</TableCell>
-					</TableHead>
-					<TableBody>
-						<TableRow>
-							<TableCell>Frozen yogurt</TableCell>
-							<TableCell align="right">159</TableCell>
-							<TableCell align="right">6</TableCell>
-							<TableCell align="right">24</TableCell>
-							<TableCell align="right">4</TableCell>
-						</TableRow>
-						<TableRow>
-							<TableCell>Ice cream sandwich</TableCell>
-							<TableCell align="right">237</TableCell>
-							<TableCell align="right">9</TableCell>
-							<TableCell align="right">37</TableCell>
-							<TableCell align="right">4.3</TableCell>
-						</TableRow>
-						<TableRow>
-							<TableCell>Eclair</TableCell>
-							<TableCell align="right">262</TableCell>
-							<TableCell align="right">16</TableCell>
-							<TableCell align="right">24</TableCell>
-							<TableCell align="right">6</TableCell>
-						</TableRow>
-						<TableRow>
-							<TableCell>Cupcake</TableCell>
-							<TableCell align="right">305</TableCell>
-							<TableCell align="right">3.7</TableCell>
-							<TableCell align="right">67</TableCell>
-							<TableCell align="right">4.3</TableCell>
-						</TableRow>
-						<TableRow>
-							<TableCell>Gingerbread</TableCell>
-							<TableCell align="right">356</TableCell>
-							<TableCell align="right">16</TableCell>
-							<TableCell align="right">49</TableCell>
-							<TableCell align="right">3.9</TableCell>
-						</TableRow>
-					</TableBody>
-				</Table>
-			</TableContainer>
+			<NavBar position="static" bg="dark">
+				<NavSection>
+					<NavItem>Home</NavItem>
+				</NavSection>
+				<NavSection>
+					<NavItem>Login</NavItem>
+					<NavItem>Sign up</NavItem>
+				</NavSection>
+			</NavBar>
 		</div>
 	);
 }
 
 export default App;
+
+{
+	/* <AppBar position="static">
+				<Tabs
+					value={value}
+					onChange={handleChange}
+					aria-label="simple tabs example"
+				>
+					<Tab label="Item One" {...a11yProps(0)} />
+					<Tab label="Item Two" {...a11yProps(1)} />
+					<Tab label="Item Three" {...a11yProps(2)} />
+				</Tabs>
+			</AppBar>
+			<TabPanel value={value} index={0}>
+				Item One
+			</TabPanel>
+			<TabPanel value={value} index={1}>
+				Item Two
+			</TabPanel>
+			<TabPanel value={value} index={2}>
+				Item Three
+			</TabPanel> */
+}
