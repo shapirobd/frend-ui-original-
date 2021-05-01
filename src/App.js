@@ -27,40 +27,68 @@ import React from "react";
 // import CardActions from "./components/Card/CardActions";
 // import Avatar from "./components/Avatar";
 // import useToggleState from "./hooks/useToggleState";
-import NavBar from "./components/NavBar/NavBar";
+// import NavBar from "./components/NavBar/NavBar";
 // import NavSection from "./components/NavBar/NavSection";
 // import NavItem from "./components/NavBar/NavItem";
-import Tab from "./components/Tabs/Tab";
-import Tabs from "./components/Tabs/Tabs";
-import TabPanel from "./components/Tabs/TabPanel";
+// import Tab from "./components/Tabs/Tab";
+// import Tabs from "./components/Tabs/Tabs";
+// import TabPanel from "./components/Tabs/TabPanel";
+import AccordionGroup from "./components/Accordion/AccordionGroup";
+import Accordion from "./components/Accordion/Accordion";
+import AccordionSummary from "./components/Accordion/AccordionSummary";
+import AccordionDetails from "./components/Accordion/AccordionDetails";
+import DownArrowIcon from "./icons/DownArrowIcon";
 
 // const testArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function App() {
-	const [value, setValue] = React.useState(0);
-
-	const handleChange = (event, newValue) => {
-		setValue(newValue);
-	};
-
 	return (
-		<div className="App">
-			<NavBar position="static" bg="dark">
-				<Tabs value={value} onChange={handleChange}>
-					<Tab label="Item One" number={0} />
-					<Tab label="Item Two" number={1} />
-					<Tab label="Item Three" number={2} />
-				</Tabs>
-			</NavBar>
-			<TabPanel value={value} index={0} bg="dark">
-				Item One
-			</TabPanel>
-			<TabPanel value={value} index={1} bg="dark">
-				Item Two
-			</TabPanel>
-			<TabPanel value={value} index={2} bg="dark">
-				Item Three
-			</TabPanel>
+		<div
+			className="App"
+			style={{
+				display: "flex",
+				justifyContent: "center",
+				// alignItems: "center",
+				height: "100vh",
+			}}
+		>
+			<div
+				style={{
+					width: "50%",
+					height: "fit-content",
+					padding: "20px",
+					backgroundColor: "#333333",
+					borderRadius: "4px",
+				}}
+			>
+				<AccordionGroup>
+					<Accordion bg="dark">
+						<AccordionSummary expandIcon={<DownArrowIcon color="light" />}>
+							Accordion 1
+						</AccordionSummary>
+						<AccordionDetails>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+							eget.
+						</AccordionDetails>
+					</Accordion>
+					<Accordion bg="dark">
+						<AccordionSummary expandIcon={<DownArrowIcon color="light" />}>
+							Accordion 2
+						</AccordionSummary>
+						<AccordionDetails>
+							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+							Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
+							eget.
+						</AccordionDetails>
+					</Accordion>
+					<Accordion bg="dark" disabled>
+						<AccordionSummary expandIcon={<DownArrowIcon color="light" />}>
+							Disabled Accordion
+						</AccordionSummary>
+					</Accordion>
+				</AccordionGroup>
+			</div>
 		</div>
 	);
 }

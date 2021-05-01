@@ -1,0 +1,14 @@
+.Icon {
+	height: 12px;
+	width: 12px;
+	/* background-size: contain; */
+	/* background-repeat: no-repeat; */
+}
+
+.Icon[disabled] {
+	opacity: 0.5;
+}
+
+.Icon.light {
+	filter: invert(1);
+}

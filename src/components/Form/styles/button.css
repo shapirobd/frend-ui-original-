@@ -5,6 +5,11 @@
 	border-radius: 5px;
 }
 
+.Button.icon {
+	display: inline-flex;
+	padding: 14px;
+}
+
 .bg-primary {
 	background-color: #3448fa;
 }
@@ -31,6 +36,10 @@
 
 .bg-dark {
 	background-color: #000;
+}
+
+.bg-transparent {
+	background-color: transparent;
 }
 
 .color-light {
