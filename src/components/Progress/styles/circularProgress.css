@@ -1,0 +1,15 @@
+@keyframes rotation {
+	from {
+		transform-origin: center;
+		transform: rotate(0deg);
+	}
+	to {
+		transform: rotate(359deg);
+		transform-origin: center;
+	}
+}
+
+.CircularProgress {
+	animation: rotation 1s infinite linear;
+	position: relative;
+}
