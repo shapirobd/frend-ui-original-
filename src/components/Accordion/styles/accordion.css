@@ -1,0 +1,21 @@
+.Accordion {
+	width: 100%;
+	border-bottom: 1px solid #515151;
+	overflow: hidden;
+	border-collapse: separate;
+}
+
+.Accordion.disabled {
+	color: #bbb !important;
+	background-color: #4b4b4b !important;
+}
+
+.Accordion.bg-dark {
+	background-color: #424242;
+	color: #fff;
+	/* transform: ; */
+}
+
+.Accordion.bg-dark .AccordionDetails {
+	background-color: #535353;
+}

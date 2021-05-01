@@ -1,5 +1,5 @@
 import React from "react";
-import "./gridItem.css";
+import "./styles/gridItem.css";
 
 const GridItem = ({ children }) => {
 	return <div className="GridItem">{children}</div>;

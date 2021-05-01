@@ -1,0 +1,10 @@
+.TabPanel {
+	display: flex;
+	align-items: center;
+	padding: 20px;
+}
+
+.TabPanel.bg-dark {
+	background-color: #535353;
+	color: #fff;
+}

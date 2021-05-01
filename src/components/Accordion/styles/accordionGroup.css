@@ -1,0 +1,7 @@
+.AccordionGroup {
+	border-radius: 4px;
+	width: 100%;
+	border-collapse: collapse;
+	overflow: hidden;
+	box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}

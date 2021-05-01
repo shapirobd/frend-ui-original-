@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import "./grid.css";
+import "./styles/grid.css";
 import useWindowDimensions from "../../hooks/getWindowDimensions";
 
 const breakpoints = {
