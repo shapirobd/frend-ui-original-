@@ -241,3 +241,44 @@ function App() {
 
 export default App;
 ```
+
+## Tabs
+
+```javascript
+import "./App.css";
+import React from "react";
+import NavBar from "./components/NavBar/NavBar";
+import Tab from "./components/Tabs/Tab";
+import Tabs from "./components/Tabs/Tabs";
+import TabPanel from "./components/Tabs/TabPanel";
+function App() {
+	const [value, setValue] = React.useState(0);
+
+	const handleChange = (event, newValue) => {
+		setValue(newValue);
+	};
+
+	return (
+		<div className="App">
+			<NavBar position="static" bg="dark">
+				<Tabs value={value} onChange={handleChange}>
+					<Tab label="Item One" number={0} />
+					<Tab label="Item Two" number={1} />
+					<Tab label="Item Three" number={2} />
+				</Tabs>
+			</NavBar>
+			<TabPanel value={value} index={0} bg="dark">
+				Item One
+			</TabPanel>
+			<TabPanel value={value} index={1} bg="dark">
+				Item Two
+			</TabPanel>
+			<TabPanel value={value} index={2} bg="dark">
+				Item Three
+			</TabPanel>
+		</div>
+	);
+}
+
+export default App;
+```

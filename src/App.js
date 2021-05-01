@@ -28,48 +28,41 @@ import React from "react";
 // import Avatar from "./components/Avatar";
 // import useToggleState from "./hooks/useToggleState";
 import NavBar from "./components/NavBar/NavBar";
-import NavSection from "./components/NavBar/NavSection";
-import NavItem from "./components/NavBar/NavItem";
+// import NavSection from "./components/NavBar/NavSection";
+// import NavItem from "./components/NavBar/NavItem";
+import Tab from "./components/Tabs/Tab";
+import Tabs from "./components/Tabs/Tabs";
+import TabPanel from "./components/Tabs/TabPanel";
 
 // const testArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
 function App() {
+	const [value, setValue] = React.useState(0);
+
+	const handleChange = (event, newValue) => {
+		setValue(newValue);
+	};
+
 	return (
 		<div className="App">
 			<NavBar position="static" bg="dark">
-				<NavSection>
-					<NavItem>Home</NavItem>
-				</NavSection>
-				<NavSection>
-					<NavItem>Login</NavItem>
-					<NavItem>Sign up</NavItem>
-				</NavSection>
+				<Tabs value={value} onChange={handleChange}>
+					<Tab label="Item One" number={0} />
+					<Tab label="Item Two" number={1} />
+					<Tab label="Item Three" number={2} />
+				</Tabs>
 			</NavBar>
+			<TabPanel value={value} index={0} bg="dark">
+				Item One
+			</TabPanel>
+			<TabPanel value={value} index={1} bg="dark">
+				Item Two
+			</TabPanel>
+			<TabPanel value={value} index={2} bg="dark">
+				Item Three
+			</TabPanel>
 		</div>
 	);
 }
 
 export default App;
-
-{
-	/* <AppBar position="static">
-				<Tabs
-					value={value}
-					onChange={handleChange}
-					aria-label="simple tabs example"
-				>
-					<Tab label="Item One" {...a11yProps(0)} />
-					<Tab label="Item Two" {...a11yProps(1)} />
-					<Tab label="Item Three" {...a11yProps(2)} />
-				</Tabs>
-			</AppBar>
-			<TabPanel value={value} index={0}>
-				Item One
-			</TabPanel>
-			<TabPanel value={value} index={1}>
-				Item Two
-			</TabPanel>
-			<TabPanel value={value} index={2}>
-				Item Three
-			</TabPanel> */
-}

@@ -3,7 +3,7 @@ import "./styles/navItem.css";
 
 const NavItem = ({ children }) => {
 	return (
-		<a className="NavItem" href="">
+		<a className="NavItem" href="#">
 			{children}
 		</a>
 	);
