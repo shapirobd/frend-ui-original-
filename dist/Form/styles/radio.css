@@ -1,0 +1,73 @@
+.radio-container {
+	/* display: block; */
+	position: relative;
+	height: 18px;
+	width: 18px;
+	margin: 10px;
+	/* padding-left: 35px;
+	margin-bottom: 12px; */
+	cursor: pointer;
+	font-size: 22px;
+	/* width: 0; */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+}
+
+.radio-container input {
+	position: relative;
+	opacity: 0;
+	cursor: pointer;
+	height: 0;
+	width: 0;
+}
+
+.radio-mark {
+	border-radius: 50%;
+	border: 2px solid #bdbdbd;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 18px;
+	width: 18px;
+	/* background-color: #fff; */
+}
+
+.radio-container:hover input ~ .radio-mark {
+	background-color: rgba(145, 219, 151, 0.7);
+}
+
+.radio-container:hover input ~ .radio-mark:after {
+	border: solid rgba(145, 219, 151, 0);
+	display: block;
+}
+
+.radio-container input:checked ~ .radio-mark {
+	background-color: #4ada56;
+	border-color: #4ada56;
+}
+
+.radio-mark:after {
+	content: "";
+	position: absolute;
+	display: none;
+}
+
+/* Show the radio-mark when checked */
+.radio-container input:checked ~ .radio-mark:after {
+	display: block;
+}
+
+/* Style the radio-mark/indicator */
+.radio-container .radio-mark:after {
+	left: 25%;
+	top: 7%;
+	width: 5px;
+	height: 10px;
+	border: solid #4ada56;
+	border-width: 0 3px 3px 0;
+	-webkit-transform: rotate(45deg);
+	-ms-transform: rotate(45deg);
+	transform: rotate(45deg);
+}

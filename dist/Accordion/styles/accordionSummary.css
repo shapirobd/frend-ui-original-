@@ -1,0 +1,36 @@
+.AccordionSummary {
+	position: relative;
+	padding-left: 14px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 99;
+}
+
+.AccordionSummary.uncollapsed {
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.AccordionSummary-wrapper {
+	text-decoration: none;
+	color: inherit;
+	width: 100%;
+	height: 100%;
+}
+
+.AccordionSummary-wrapper[disabled] {
+	pointer-events: none;
+	cursor: default;
+	/* color: #bbb !important;
+	background-color: #535353 !important; */
+}
+
+.ExpandIcon-wrapper {
+	transition-duration: 0.2s;
+	padding: 14px;
+}
+
+.ExpandIcon-wrapper.uncollapsed {
+	transition-duration: 0.2s;
+	transform: rotate(180deg);
+}

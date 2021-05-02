@@ -1,10 +1,10 @@
 import React from "react";
-import "./card.css";
+import "./styles/cardBody.css";
 
-const Card = ({
+const CardBody = ({
   children
 }) => /*#__PURE__*/React.createElement("div", {
-  className: "card"
+  className: "CardBody"
 }, children);
 
-export default Card;
+export default CardBody;

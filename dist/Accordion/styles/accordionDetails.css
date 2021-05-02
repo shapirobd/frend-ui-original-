@@ -1,0 +1,10 @@
+.AccordionDetails {
+	transition-duration: 0.2s;
+	padding: 14px;
+}
+
+.AccordionDetails.collapsed {
+	transition-duration: 0.2s;
+	padding: 0 14px;
+	max-height: 0;
+}
