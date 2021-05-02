@@ -38,6 +38,7 @@ import CircularProgress from "./components/Progress/CircularProgress";
 // import AccordionSummary from "./components/Accordion/AccordionSummary";
 // import AccordionDetails from "./components/Accordion/AccordionDetails";
 // import DownArrowIcon from "./icons/DownArrowIcon";
+import Typography from "./components/Typography";
 
 // const testArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -55,8 +56,9 @@ function App() {
 			<div
 				style={{
 					display: "flex",
+					flexDirection: "column",
 					justifyContent: "center",
-					alignItems: "center",
+					// alignItems: "center",
 					width: "fit-content",
 					height: "fit-content",
 					padding: "20px",
@@ -64,9 +66,36 @@ function App() {
 					borderRadius: "4px",
 				}}
 			>
-				<CircularProgress size={100} color="#7777ff" />
-				<CircularProgress size={100} color="#ff7777" />
-				<CircularProgress size={100} color="#77ff77" />
+				<Typography variant="h1" color="light">
+					h1 Heading
+				</Typography>
+				<Typography variant="h2" color="light">
+					h2 Heading
+				</Typography>
+				<Typography variant="h3" color="light">
+					h3 Heading
+				</Typography>
+				<Typography variant="h4" color="light">
+					h4 Heading
+				</Typography>
+				<Typography variant="h5" color="light">
+					h5 Heading
+				</Typography>
+				<Typography variant="h6" color="light">
+					h6 Heading
+				</Typography>
+				<Typography variant="body" color="light">
+					This is body text
+				</Typography>
+				<Typography variant="subtitle" color="light">
+					This is a subtitle
+				</Typography>
+				<Typography variant="button" color="light">
+					Button Text
+				</Typography>
+				<Typography variant="caption" color="light">
+					This is caption text
+				</Typography>
 			</div>
 		</div>
 	);
