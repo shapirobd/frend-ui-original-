@@ -128,6 +128,47 @@ export default App;
 
 ```
 
+## CircularProgress
+
+```javascript
+import "./App.css";
+import React from "react";
+import CircularProgress from "./components/Progress/CircularProgress";
+
+function App() {
+	return (
+		<div
+			className="App"
+			style={{
+				display: "flex",
+				justifyContent: "center",
+				alignItems: "center",
+				height: "100vh",
+			}}
+		>
+			<div
+				style={{
+					display: "flex",
+					justifyContent: "center",
+					alignItems: "center",
+					width: "fit-content",
+					height: "fit-content",
+					padding: "20px",
+					backgroundColor: "#333333",
+					borderRadius: "4px",
+				}}
+			>
+				<CircularProgress size={100} color="#7777ff" />
+				<CircularProgress size={100} color="#ff7777" />
+				<CircularProgress size={100} color="#77ff77" />
+			</div>
+		</div>
+	);
+}
+
+export default App;
+```
+
 ## Form
 
 ```javascript

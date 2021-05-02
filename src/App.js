@@ -12,7 +12,7 @@ import React from "react";
 // import GridItem from "./components/Grid/GridItem";
 // import Message from "./components/Message";
 // import DialogScreen from "./components/Dialog/DialogScreen";
-// import ProgressBar from "./components/ProgressBar";
+import CircularProgress from "./components/Progress/CircularProgress";
 // import Tab from "./components/Tab";
 // import TableContainer from "./components/Table/TableContainer";
 // import Table from "./components/Table/Table";
@@ -33,11 +33,12 @@ import React from "react";
 // import Tab from "./components/Tabs/Tab";
 // import Tabs from "./components/Tabs/Tabs";
 // import TabPanel from "./components/Tabs/TabPanel";
-import AccordionGroup from "./components/Accordion/AccordionGroup";
-import Accordion from "./components/Accordion/Accordion";
-import AccordionSummary from "./components/Accordion/AccordionSummary";
-import AccordionDetails from "./components/Accordion/AccordionDetails";
-import DownArrowIcon from "./icons/DownArrowIcon";
+// import AccordionGroup from "./components/Accordion/AccordionGroup";
+// import Accordion from "./components/Accordion/Accordion";
+// import AccordionSummary from "./components/Accordion/AccordionSummary";
+// import AccordionDetails from "./components/Accordion/AccordionDetails";
+// import DownArrowIcon from "./icons/DownArrowIcon";
+import Typography from "./components/Typography";
 
 // const testArr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 
@@ -48,46 +49,53 @@ function App() {
 			style={{
 				display: "flex",
 				justifyContent: "center",
-				// alignItems: "center",
+				alignItems: "center",
 				height: "100vh",
 			}}
 		>
 			<div
 				style={{
-					width: "50%",
+					display: "flex",
+					flexDirection: "column",
+					justifyContent: "center",
+					// alignItems: "center",
+					width: "fit-content",
 					height: "fit-content",
 					padding: "20px",
 					backgroundColor: "#333333",
 					borderRadius: "4px",
 				}}
 			>
-				<AccordionGroup>
-					<Accordion bg="dark">
-						<AccordionSummary expandIcon={<DownArrowIcon color="light" />}>
-							Accordion 1
-						</AccordionSummary>
-						<AccordionDetails>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-							eget.
-						</AccordionDetails>
-					</Accordion>
-					<Accordion bg="dark">
-						<AccordionSummary expandIcon={<DownArrowIcon color="light" />}>
-							Accordion 2
-						</AccordionSummary>
-						<AccordionDetails>
-							Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-							Suspendisse malesuada lacus ex, sit amet blandit leo lobortis
-							eget.
-						</AccordionDetails>
-					</Accordion>
-					<Accordion bg="dark" disabled>
-						<AccordionSummary expandIcon={<DownArrowIcon color="light" />}>
-							Disabled Accordion
-						</AccordionSummary>
-					</Accordion>
-				</AccordionGroup>
+				<Typography variant="h1" color="light">
+					h1 Heading
+				</Typography>
+				<Typography variant="h2" color="light">
+					h2 Heading
+				</Typography>
+				<Typography variant="h3" color="light">
+					h3 Heading
+				</Typography>
+				<Typography variant="h4" color="light">
+					h4 Heading
+				</Typography>
+				<Typography variant="h5" color="light">
+					h5 Heading
+				</Typography>
+				<Typography variant="h6" color="light">
+					h6 Heading
+				</Typography>
+				<Typography variant="body" color="light">
+					This is body text
+				</Typography>
+				<Typography variant="subtitle" color="light">
+					This is a subtitle
+				</Typography>
+				<Typography variant="button" color="light">
+					Button Text
+				</Typography>
+				<Typography variant="caption" color="light">
+					This is caption text
+				</Typography>
 			</div>
 		</div>
 	);
